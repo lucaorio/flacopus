@@ -16,7 +16,7 @@ const iterateFiles = require('./iterate-files')
     .flat(2)
     .filter(item => item && item)
 
-  // divide the main array in chuks to process files in parallel
+  // divide the main array in chunks to process files in parallel
   const chunks = Array(Math.ceil(tracks.length / concurrent))
     .fill()
     .map((_, index) => index * concurrent)
