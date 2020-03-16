@@ -1,0 +1,25 @@
+{
+  "name": "flacopus",
+  "description": "FLAC to Opus library converter",
+  "version": "1.0.0",
+  "author": "Luca Orio <luca.o@me.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "chalk": "^3.0.0",
+    "directory-tree": "^2.2.4",
+    "eslint": "^6.7.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "fs-extra": "^8.1.0",
+    "prettier": "^1.19.1",
+    "untildify": "^4.0.0"
+  },
+  "scripts": {
+    "build": "node ./convert/index.js"
+  },
+  "config": {
+    "input": "~/Discography",
+    "output": "./output",
+    "concurrent": 22
+  }
+}
